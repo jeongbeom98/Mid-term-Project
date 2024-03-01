@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Sacramento&display=swap');
+
+.todo-container {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.sequence-header {
+  font-family: 'Sacramento';
+  color: #6a9f8f;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.add-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input, .btn {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input {
+  flex-grow: 1;
+  max-width: calc(50% - 10px); /* Adjusts input width */
+}
+
+.btn {
+  background-color: #6a9f8f;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.add-btn:hover, .edit-btn:hover, .delete-btn:hover {
+  opacity: 0.9;
+}
+
+.todo-list {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+}
+
+.todo-item {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn, .delete-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #528872; /* A shade darker for action buttons */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #c94a4a; /* Color for delete action */
+}
+
+.todo-text h3, .todo-text p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .add-todo {
+    flex-direction: column;
+  }
+
+  .input {
+    max-width: none; /* Allows inputs to expand on smaller screens */
+  }
+}
