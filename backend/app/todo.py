@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, Body
 from pydantic import BaseModel
+from .models import Todo
 
 class Todo(BaseModel):  # This class defines the structure of your todo item
     title: str
