@@ -47,28 +47,25 @@ Yoga Sequence Builder is a web application designed to allow users to create, vi
 - `package.json`: Lists all Node.js dependencies for the frontend.
 
 ## Screenshots
-(Include a few screenshots of your application in action here.)
-
+![homepage](screenshots/home.png)
+![sequence builder](screenshots/sequence.png)
 ## Challenges and Solutions
-(Discuss any challenges you faced during the development of this project and how you resolved them.)
 
+### State Management in React
+**Challenge**: Managing the state of todos across different components was initially challenging, leading to inconsistencies in the UI.
+**Solution**: Implemented context API and hooks to streamline state management, ensuring that the UI remains consistent across all components.
+
+### Integrating FastAPI with React
+**Challenge**: Ensuring seamless communication between the FastAPI backend and the React frontend, especially handling CORS issues and HTTP requests.
+**Solution**: Configured CORS middleware in the FastAPI app to allow requests from the frontend domain and used async/await in React to handle API requests gracefully.
+
+### Data Validation and Error Handling
+**Challenge**: Providing instant feedback for input validation and errors to improve user experience.
+**Solution**: Leveraged Pydantic models for backend validation and implemented custom validation functions in React that display error messages next to the form fields.
 ## Future Enhancements
-(List any potential improvements or features you would like to add to the project in the future.)
 
-## Acknowledgements
-(Give credit to any resources or individuals that helped you in the development of this project.)
-
-## License
-This project is open source and available under the [MIT License](LICENSE).
-
-
-
-
-
-
-
-
-
-
-
-
+1. **User Authentication**: Implement user registration, login, and authentication to personalize yoga sequences and allow users to save their sequences.
+2. **Sharing Capabilities**: Add functionality for users to share their yoga sequences with others or on social media platforms.
+3. **Advanced Sequence Customization**: Introduce more customizable options for each yoga pose, including duration, difficulty level, and optional notes.
+4. **Mobile App**: Develop a mobile version of the application to provide users with access to their sequences on-the-go.
+5. **Community Features**: Create a platform for users to share, rate, and comment on each other's sequences, fostering a community of yoga enthusiasts.
