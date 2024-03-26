@@ -18,7 +18,7 @@ app.add_middleware(
 app.include_router(todo_router, prefix="/api", tags=["Todo"])
 
 # Serve all static files from the directory named "static"
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+app.mount("/static", StaticFiles(directory="static", html=True), name="static")
 
 @app.get("/")
 async def welcome() -> dict:
