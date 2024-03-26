@@ -24,6 +24,9 @@ Yoga Sequence Builder is a web application designed to allow users to create, vi
 - On macOS/Linux: `source venv/bin/activate`
 4. Install the required dependencies: pip install -r requirements.txt
 5. Start the FastAPI server: uvicorn main:app --reload
+6. Swagger UI: http://127.0.0.1:8000/docs#/Todo/get_todos_api_todos_get
+7. api: http://127.0.0.1:8000/api/todos
+8. ReDoc: http://127.0.0.1:8000/redoc#operation/welcome__get
 
 ### Setting Up the Frontend
 1. Navigate to the frontend directory within the project.
